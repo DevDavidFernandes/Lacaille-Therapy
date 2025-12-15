@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Pontano+Sans:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+.cabeçalho {
+  display: flex;
+  align-items: center;
+}
+
+.cabeçalho h2 a {
+  text-decoration: none;
+  color: white;
+  margin-left: 5vw;
+  margin-right: 3vw;
+  font-family: "Cactus Classical Serif", serif;
+  font-weight: bold;
+}
+
+.cabeçalho ul {
+  display: flex;
+  margin-right: 30vw;
+}
+
+.cabeçalho ul li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0 15px;
+}
+
+.cabeçalho ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: pontano sans, sans-serif;
+}
+
+.plano-de-fundo {
+  height: 100vh;
+  background-image: url("../img/fundo-inicio.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+button {
+  padding: 20px 40px;
+  background-color: #d4967d;
+  border: none;
+  cursor: pointer;
+  font-family: "Pontano Sans", sans-serif;
+  transition: 0.3s;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+.texto-inicio {
+  color: white;
+  text-align: left;
+  font-family: "Cactus Classical Serif", serif;
+  margin-left: 5vw;
+  margin-bottom: 15vh;
+  font-size: 40px;
+  width: 850px;
+}
+
+.texto-inicio p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 30px;
+  margin-top: 5vh;
+}
