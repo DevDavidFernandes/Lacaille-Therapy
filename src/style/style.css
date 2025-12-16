@@ -89,3 +89,139 @@ button:hover {
   font-size: 30px;
   margin-top: 5vh;
 }
+
+.abordagem {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10vw;
+  margin-bottom: 22px;
+}
+
+.abordagem h2 {
+  font-family: "Cactus Classical Serif", serif;
+  font-size: 80px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.abordagem p {
+  font-family: "Pontano Sans", sans-serif;
+  font-size: 23px;
+  line-height: 1.5;
+  margin-bottom: 130px;
+}
+
+.seção-foto-texto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.foto-texto {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.foto-texto img {
+  width: 600px;
+  border-radius: 10px;
+  margin-left: 50px;
+  display: flex;
+  margin-right: 10vw;
+}
+
+.texto-foto {
+  max-width: 600px;
+  margin-right: 50px;
+}
+
+.texto-foto h3 {
+  font-family: "Cactus Classical Serif", serif;
+  font-size: 60px;
+  margin-bottom: 60px;
+  font-weight: 400;
+}
+
+.texto-foto p {
+  font-family: "Pontano Sans", sans-serif;
+  font-size: 27px;
+  line-height: 1.5;
+}
+
+.mapa {
+  filter: grayscale(100%) contrast(100%) brightness(110%);
+}
+
+.seção-texto-mapa {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 30px;
+}
+
+.texto-mapa {
+  max-width: 600px;
+  margin-right: 10vw;
+  margin-left: 2vw;
+}
+
+.texto-mapa h3 {
+  font-family: "Cactus Classical Serif", serif;
+  font-size: 70px;
+  margin-bottom: 70px;
+  font-weight: 400;
+}
+
+.texto-mapa p {
+  font-family: "Pontano Sans", sans-serif;
+  font-size: 27px;
+  line-height: 1.5;
+}
+
+.serviços {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10vw;
+  margin-bottom: 22px;
+  background-color: #495a58;
+  color: white;
+}
+
+.serviços-lista {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.terapia {
+  max-width: 300px;
+  align-items: center;
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+.terapia img {
+  width: 30vw;
+  margin-bottom: 20px;
+}
+
+.terapia p {
+  font-family: "Pontano Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
