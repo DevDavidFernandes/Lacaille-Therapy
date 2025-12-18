@@ -46,7 +46,6 @@ header {
 
 .plano-de-fundo {
   height: 100vh;
-  background-image: url("../img/fundo-inicio.jpg");
   background-size: cover;
   display: flex;
   justify-content: start;
@@ -65,7 +64,7 @@ button {
 button a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 button:hover {
@@ -186,16 +185,20 @@ button:hover {
 }
 
 .serviços {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 0 10vw;
-  margin-bottom: 22px;
   background-color: #495a58;
   color: white;
+}
+
+.serviços h3 {
+  font-family: "Cactus Classical Serif", serif;
+  font-size: 60px;
+  margin-bottom: 40px;
+  font-weight: 400;
 }
 
 .serviços-lista {
@@ -203,17 +206,12 @@ button:hover {
   justify-content: space-around;
   width: 100%;
   margin-top: 50px;
+  text-align: center;
+  margin-bottom: 5vw;
 }
 
-.terapia {
-  max-width: 300px;
-  align-items: center;
-  display: block;
-  text-align: center;
-  justify-content: center;
-}
-.terapia img {
-  width: 30vw;
+.serviços-lista img {
+  width: 300px;
   margin-bottom: 20px;
 }
 
@@ -224,4 +222,159 @@ button:hover {
   align-items: center;
   justify-content: center;
   display: block;
+}
+
+.terapeuta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.terapeuta h3 {
+  font-family: "Cactus Classical Serif", serif;
+  font-size: 50px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-weight: 400;
+}
+
+.foto-terapeuta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.foto-terapeuta img {
+  width: 320px;
+}
+
+.foto-terapeuta p {
+  font-family: "Pontano Sans", sans-serif;
+  font-size: 23px;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.comentario {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10vw;
+  background-color: #dcd9d0;
+}
+
+.comentario h4 {
+  font-family: "Cactus Classical Serif", serif;
+  font-size: 50px;
+  margin-bottom: 80px;
+  font-weight: 400;
+}
+
+.comentario p {
+  font-family: "Pontano Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.chamada-para-ação {
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #495a58;
+  color: white;
+}
+
+.chamada-para-ação h2 {
+  font-family: "Cactus Classical Serif", serif;
+  font-size: 50px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.chamada-para-ação button {
+  font-size: 20px;
+  padding: 15px 60px;
+}
+
+.rodape {
+  height: 45vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Pontano Sans", sans-serif;
+  font-weight: 300;
+}
+
+.info-rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+.info-rodape h3 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.info-rodape p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.contato-rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+.contato-rodape h4 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.contato-rodape a {
+  font-size: 20px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #d4967d;
+  margin-bottom: 15px;
+}
+
+.contato-rodape i {
+  margin-right: 10px;
+}
+
+.nav-rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.nav-rodape li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.nav-rodape li a {
+  text-decoration: none;
+  color: #d4967d;
+  font-size: 20px;
 }
