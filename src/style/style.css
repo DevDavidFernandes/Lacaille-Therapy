@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+:root {
+  --font-primary: "Cactus Classical Serif", serif;
+  --font-secondary: "Pontano Sans", sans-serif;
+}
+
+
 header {
   width: 100%;
   height: 15vh;
@@ -25,6 +31,7 @@ header {
   margin-right: 3vw;
   font-family: "Cactus Classical Serif", serif;
   font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .cabeçalho ul {
@@ -42,14 +49,37 @@ header {
   text-decoration: none;
   color: white;
   font-family: pontano sans, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.plano-de-fundo {
+.background {
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-home {
   height: 100vh;
   background-size: cover;
   display: flex;
   justify-content: start;
   align-items: flex-end;
+}
+
+/* Backgrounds pages */
+.bg-home {
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  background-image: url("../img/fundo-inicio.jpg");
+}
+
+.bg-sobre {
+  background-image: url("../img/fundo-sobre.png");
 }
 
 button {
@@ -59,6 +89,7 @@ button {
   cursor: pointer;
   font-family: "Pontano Sans", sans-serif;
   transition: 0.3s;
+  color: white;
 }
 
 button a {
@@ -74,19 +105,107 @@ button:hover {
 
 .texto-inicio {
   color: white;
-  text-align: left;
   font-family: "Cactus Classical Serif", serif;
-  margin-left: 5vw;
-  margin-bottom: 15vh;
-  font-size: 40px;
-  width: 850px;
 }
 
-.texto-inicio p {
+.texto-padrao h2 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 50px;
+  margin-top: 20vh;
+  width: 80vw;
+}
+
+.texto-home {
+  text-align: left;
+  margin-left: 5vw;
+  margin-bottom: 10vh;
+}
+
+.texto-home p {
   margin-bottom: 20px;
   line-height: 1.5;
   font-size: 30px;
   margin-top: 5vh;
+}
+
+.content-block {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  height: 100vh;
+  padding: 0 80px;
+  text-align: center;
+}
+
+
+.content-text {
+  text-align: left;
+}
+
+.content-text h2 {
+  font-family: "Cactus Classical Serif", serif;
+  font-size: 70px;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.content-text p {
+  font-family: var(--font-secondary);
+  font-weight: 300;
+  font-size:23px;
+  text-align: left;
+  line-height: 1.6;
+  
+}
+
+.content-text button {
+  margin-top: 40px;
+}
+
+.content-image,
+.content-text {
+  width: 50%;
+}
+
+.content-image img {
+  height: 550px;
+  align-items: end;
+}
+
+.content-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.services {
+  gap: 50px;
+  height: 100vh;
+  padding: 0 210px;
+}
+
+.services h2 {
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.list-iten,
+.list-price {
+  width: 50%;
+}
+
+.services-list {
+  display: flex;
+  align-items: top;
+  gap: 50px;
+  padding: 0 80px;
+}
+
+
+.list-iten h3 {
+  display: flex;
+  justify-items: start;
 }
 
 .abordagem {
