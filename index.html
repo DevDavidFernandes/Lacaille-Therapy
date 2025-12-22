@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <!-- Inicio da primeira seção (nav + imagem inicial)-->
+   <!-- Inicio do Header-->
     <header>
       <nav class="cabeçalho">
         <h2><a href="index.html">Lacaille Therapy</a></h2>
@@ -24,143 +24,156 @@
           <li><a href="psicologa.html">A Psicóloga</a></li>
           <li><a href="contato.html">Contato</a></li>
         </ul>
-        <button><a href="comece.html">COMECE AGORA</a></button>
+        <a href="sobre.html" class="button">COMECE AGORA</a>
       </nav>
     </header>
+    <!-- Fim do Header -->
   
-      <section class="background-home bg-home">
-          <div class="texto-inicio texto-home">
-            <h2>Conheça a Lacaille Therapy, um espaço de cuidado psicológico.</h2>
+      <div class="container-home">
+
+        <!-- SECTION 1 - FUNDO + TEXTO DE APRESENTAÇÂO -->
+
+        <section class="background-home bg-home">
+            <div class="texto-inicio texto-home">
+              <h2>Conheça a Lacaille Therapy, um espaço de cuidado psicológico.</h2>
+              <p>
+                Receba atendimento terapêutico acessível e personalizado, seja
+                presencialmente ou no conforto da sua casa.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- FIM DA SECTION 1 -->
+
+        
+        <!-- SECTION 2 - TEXTO (ABORDAGEM) + BOTÃO -->
+
+        <section class="approach-preview">
+            <h2>Nossa Abordagem</h2>
             <p>
-              Receba atendimento terapêutico acessível e personalizado, seja
-              presencialmente ou no conforto da sua casa.
+            Na Lacaille Therapy, o seu cuidado é guiado pela Terapia
+            Cognitivo-Comportamental (TCC), uma abordagem prática e colaborativa
+            focada em entender e modificar os padrões de pensamento e
+            comportamento que causam sofrimento...
+            </p>
+            <a href="sobre.html" class="button">SAIBA MAIS</a>
+        </section>
+
+        <!-- FIM DA SECTION 2 -->
+
+        <!-- SECTION 3 - CONTENT BLOCK (FOTO - TEXTO - REVERSE) -->
+        <section class="content-block reverse">
+          <div class="content-text">
+              <h2>O Conforto do Nosso Consultório</h2>
+              <p>
+                Cada sessão presencial é realizada em um ambiente reconfortante e
+                totalmente privado na Lacaille Therapy. Prezo por um cuidado
+                exclusivo e atencioso, oferecendo chá e água de cortesia para que
+                você se sinta acolhido(a) desde o primeiro momento.
+              </p>
+            </div>
+          <div class="content-image">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/62beab5bd86d0024623f00b1/1656662886679-1CU4AVGFZSG3T04E747S/image-asset.jpeg"
+              alt="Consultório"
+            />
+            
+          </div>
+        </section>
+
+        <!-- FIM SECTION 3 -->
+
+        <!-- SECTION 4 - CONTENT BLOCK (TEXTO - MAPA) -->
+
+        <section class="content-block">
+          <div class="content-text">
+            <h2>Opções presenciais e remotas</h2>
+            <p>
+              Não está na região ou prefere a comodidade de casa? Não se preocupe!
+              Ofereço sessões de terapia online completas e seguras, permitindo
+              que você continue sua jornada terapêutica de onde estiver.
             </p>
           </div>
-        </div>
-      </section>
-      <!-- Fim da primeira seção -->
-      <!-- segunda seção sobre abordagem -->
-      <div class="abordagem">
-        <h2>Nossa Abordagem</h2>
-        <p>
-          Na Lacaille Therapy, o seu cuidado é guiado pela Terapia
-          Cognitivo-Comportamental (TCC), uma abordagem prática e colaborativa
-          focada em entender e modificar os padrões de pensamento e
-          comportamento que causam sofrimento. A TCC é amplamente reconhecida
-          por sua eficácia no tratamento de questões como ansiedade, depressão e
-          estresse, pois ensina ferramentas concretas para lidar com os desafios
-          do dia a dia.
-        </p>
-        <button><a href="sobre.html">SAIBA MAIS</a></button>
+          <div class="content-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.4967729953473!2d-46.191660830504276!3d-23.532966669110067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdd869c1334ef9%3A0xcdc50ab4ef124c6!2sR.%20Clara%20P%C3%A9rez%20Freire%2C%20351%20-%20Vila%20Mogi%20Moderno%2C%20Mogi%20das%20Cruzes%20-%20SP%2C%2008717-310!5e0!3m2!1spt-BR!2sbr!4v1765907735063!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              aria-hidden="true"
+              frameborder="0"
+              tabindex="-1"
+              style="
+                z-index: -1;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                left: 0px;
+                border: none;
+                opacity: 0;
+              "
+            ></iframe>
+          </div>
+        </section>
+        <!-- Fim da seção 4 -->
+        <!-- Seção 5 Serviços -->
+        <section class="serviços">
+          <h3>Nossos serviços</h3>
+          <div class="serviços-lista">
+            <div class="terapia">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/62beab5bd86d0024623f00b1/1656662886703-QO5RWUX6Q2VLXD3QOH4R/Thrapy+copy+2.png"
+                alt="Terapia"
+              />
+              <p>Terapia</p>
+            </div>
+            <div class="neuro">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/62beab5bd86d0024623f00b1/1656662886727-0NBGPVHLTNTTGGT5WR30/Coaching+copy.png"
+                alt="Neuropsicologia"
+              />
+              <p>Neuropsicologia Aplicada</p>
+            </div>
+            <div class="desenvolvimento">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/62beab5bd86d0024623f00b1/1656662886743-WG466R56QYU9RFLV69U8/Accupuncture+copy+2.png"
+                alt=""
+              />
+              <p>Desenvolvimento de habilidades</p>
+            </div>
+          </div>
+          <a href="sobre.html" class="button">SAIBA MAIS</a>
+        </section>
+        <!-- Fim da seção 5 -->
+        <!-- Seção 6 Terapeuta -->
+        <section class="terapeuta">
+          <h3>A profissional por trás da Lacaille Therapy</h3>
+          <div class="foto-terapeuta">
+            <img src="src/img/Terapeuta.jpg" alt="" />
+            <p>Dra. Luiza Lacaille, Neuropsicóloga</p>
+          </div>
+          <a href="sobre.html" class="button">SAIBA MAIS</a>
+        </section>
+        <!-- Fim da seção 6 -->
+        <section class="comentario">
+          <h4>
+            “Encontrar a Luiza foi um divisor de águas. Sua abordagem técnica e
+            acolhedora me ajudou a entender meus padrões e a lidar melhor com os
+            desafios. A Lacaille Therapy oferece exatamente o suporte que eu
+            buscava.”
+          </h4>
+          <p>— ROBERTO G., CLIENTE</p>
+        </section>
+        <section class="chamada-para-ação">
+          <h2>Agende sua sessão na Lacaille Therapy hoje mesmo.</h2>
+          <a href="sobre.html" class="button">AGENDE JÁ</a>
+        </section>
       </div>
-      <!-- FIM da segunda seção -->
-      <!-- Seção 3 Foto + imagem -->
-      <div class="seção-foto-texto">
-        <div class="foto-texto">
-          <img
-            src="https://images.squarespace-cdn.com/content/v1/62beab5bd86d0024623f00b1/1656662886679-1CU4AVGFZSG3T04E747S/image-asset.jpeg"
-            alt="Consultório"
-          />
-          <div class="texto-foto">
-            <h3>O Conforto do Nosso Consultório</h3>
-            <p>
-              Cada sessão presencial é realizada em um ambiente reconfortante e
-              totalmente privado na Lacaille Therapy. Prezo por um cuidado
-              exclusivo e atencioso, oferecendo chá e água de cortesia para que
-              você se sinta acolhido(a) desde o primeiro momento.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- Fim da seção 3 -->
-      <!-- Seção 4 Mapa + texto -->
-      <section class="seção-texto-mapa">
-        <div class="texto-mapa">
-          <h3>Opções presenciais e remotas</h3>
-          <p>
-            Não está na região ou prefere a comodidade de casa? Não se preocupe!
-            Ofereço sessões de terapia online completas e seguras, permitindo
-            que você continue sua jornada terapêutica de onde estiver.
-          </p>
-        </div>
-        <div class="mapa">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.4967729953473!2d-46.191660830504276!3d-23.532966669110067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdd869c1334ef9%3A0xcdc50ab4ef124c6!2sR.%20Clara%20P%C3%A9rez%20Freire%2C%20351%20-%20Vila%20Mogi%20Moderno%2C%20Mogi%20das%20Cruzes%20-%20SP%2C%2008717-310!5e0!3m2!1spt-BR!2sbr!4v1765907735063!5m2!1spt-BR!2sbr"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            aria-hidden="true"
-            frameborder="0"
-            tabindex="-1"
-            style="
-              z-index: -1;
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              top: 0px;
-              left: 0px;
-              border: none;
-              opacity: 0;
-            "
-          ></iframe>
-        </div>
-      </section>
-      <!-- Fim da seção 4 -->
-      <!-- Seção 5 Serviços -->
-      <section class="serviços">
-        <h3>Nossos serviços</h3>
-        <div class="serviços-lista">
-          <div class="terapia">
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/62beab5bd86d0024623f00b1/1656662886703-QO5RWUX6Q2VLXD3QOH4R/Thrapy+copy+2.png"
-              alt="Terapia"
-            />
-            <p>Terapia</p>
-          </div>
-          <div class="neuro">
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/62beab5bd86d0024623f00b1/1656662886727-0NBGPVHLTNTTGGT5WR30/Coaching+copy.png"
-              alt="Neuropsicologia"
-            />
-            <p>Neuropsicologia Aplicada</p>
-          </div>
-          <div class="desenvolvimento">
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/62beab5bd86d0024623f00b1/1656662886743-WG466R56QYU9RFLV69U8/Accupuncture+copy+2.png"
-              alt=""
-            />
-            <p>Desenvolvimento de habilidades</p>
-          </div>
-        </div>
-        <button><a href="servicos.html">SAIBA MAIS</a></button>
-      </section>
-      <!-- Fim da seção 5 -->
-      <!-- Seção 6 Terapeuta -->
-      <section class="terapeuta">
-        <h3>A profissional por trás da Lacaille Therapy</h3>
-        <div class="foto-terapeuta">
-          <img src="src/img/Terapeuta.jpg" alt="" />
-          <p>Dra. Luiza Lacaille, Neuropsicóloga</p>
-        </div>
-        <button><a href="servicos.html">SAIBA MAIS</a></button>
-      </section>
-      <!-- Fim da seção 6 -->
-      <section class="comentario">
-        <h4>
-          “Encontrar a Luiza foi um divisor de águas. Sua abordagem técnica e
-          acolhedora me ajudou a entender meus padrões e a lidar melhor com os
-          desafios. A Lacaille Therapy oferece exatamente o suporte que eu
-          buscava.”
-        </h4>
-        <p>— ROBERTO G., CLIENTE</p>
-      </section>
-      <section class="chamada-para-ação">
-        <h2>Agende sua sessão na Lacaille Therapy hoje mesmo.</h2>
-        <button><a href="comece.html">AGENDE UMA CONSULTA</a></button>
-      </section>
 
     <footer class="rodape">
       <div class="info-rodape">

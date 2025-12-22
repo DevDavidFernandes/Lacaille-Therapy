@@ -24,8 +24,8 @@
           <li><a href="psicologa.html">A Psicóloga</a></li>
           <li><a href="contato.html">Contato</a></li>
         </ul>
-        <button><a href="comece.html">COMECE AGORA</a></button>
       </nav>
+      <a href="sobre.html" class="button">COMECE AGORA</a>
     </header>
     <!-- Fim do Header -->
 
@@ -70,7 +70,8 @@
             as intervenções sejam as mais adequadas para o seu funcionamento
             cognitivo e emocional.
           </p>
-          <button>SAIBA MAIS</button>
+
+          <a href="sobre.html" class="button">AGENDE JÁ</a>
         </div>
         <div class="content-image">
           <img src="src/img/trans-image-2.jpg" alt="" />
@@ -130,6 +131,7 @@
           </div>
         </div>
       </section>
+      <!-- FIM SECTION  3-->
 
       <!-- SECTION 4 - FORMULÁRIO -->
       <section class="contact-section">
@@ -149,13 +151,72 @@
         </div>
 
         <div class="contact-form">
-          <form>
-            <input type="text">
+          <form action="">
+            <div class="form-linha">
+              <div class="form-campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" />
+              </div>
+
+              <div class="form-campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" />
+              </div>
+            </div>
+
+            <div class="form-campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" />
+            </div>
+
+            <div class="form-campo">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" />
+            </div>
+
+            <div class="form-campo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem"></textarea>
+            </div>
+            <button type="submit" class="button">ENVIAR</button>
           </form>
         </div>
       </section>
 
       <!-- FIM DA SECTION 4 -->
+      <section class="chamada-para-ação">
+        <h2>Agende sua sessão na Lacaille Therapy hoje mesmo.</h2>
+        <a href="comece.html" class="button">AGENDE UMA CONSULTA</a>
+      </section>
     </div>
+    <!-- FIM DO CONTAINER -->
+
+    <!-- FOOTER -->
+
+    <footer class="rodape">
+      <div class="info-rodape">
+        <h3>Lacaille Therapy</h3>
+        <p>Luiza Lacaille | CRP 06/00000-X</p>
+        <p>© 2024 Lacaille Therapy.</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
+      <div class="contato-rodape">
+        <h4>Dúvidas?</h4>
+        <a href="contato.html">Fale conosco</a>
+        <div class="icon-social">
+          <i class="fa-brands fa-instagram" style="color: #000000"></i>
+          <i class="fa-brands fa-tiktok" style="color: #000000"></i>
+          <i class="fa-brands fa-facebook" style="color: #000000"></i>
+          <i class="fa-brands fa-youtube" style="color: #000000"></i>
+        </div>
+      </div>
+      <ul class="nav-rodape">
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="psicologa.html">A psicóloga</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </footer>
+    <!-- FIM DO FOOTER -->
   </body>
 </html>

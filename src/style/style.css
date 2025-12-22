@@ -1,3 +1,7 @@
+/* --------------------- */
+/* CONFIGURAÇÕES GLOBAIS */
+/* --------------------- */
+
 @import url("https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Pontano+Sans:wght@300..700&display=swap");
 
 * {
@@ -9,6 +13,10 @@
   --font-primary: "Cactus Classical Serif", serif;
   --font-secondary: "Pontano Sans", sans-serif;
 }
+
+/* --------------------- */
+/* HEADER --- CABEÇALHO  */
+/* --------------------- */
 
 header {
   width: 100%;
@@ -51,6 +59,14 @@ header {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.cabeçalho .button {
+  
+}
+
+/* --------------------- */
+/* -- PLANO DE FUNDO --  */
+/* --------------------- */
+
 .background {
   height: 100vh;
   background-size: cover;
@@ -67,7 +83,10 @@ header {
   align-items: flex-end;
 }
 
-/* Backgrounds pages */
+/* --------------------- */
+/* BACKGROUNDS DAS PAGS  */
+/* --------------------- */
+
 .bg-home {
   height: 100vh;
   background-size: cover;
@@ -81,26 +100,9 @@ header {
   background-image: url("../img/fundo-sobre.png");
 }
 
-button {
-  padding: 20px 40px;
-  background-color: #d4967d;
-  border: none;
-  cursor: pointer;
-  font-family: "Pontano Sans", sans-serif;
-  transition: 0.3s;
-  color: white;
-}
-
-button a {
-  text-decoration: none;
-  color: white;
-  font-weight: 300;
-}
-
-button:hover {
-  transition: 0.3s;
-  opacity: 0.8;
-}
+/* --------------------- */
+/* TEXTO DE APRESENTAÇÃO  */
+/* --------------------- */
 
 .texto-inicio {
   color: white;
@@ -127,6 +129,39 @@ button:hover {
   font-size: 30px;
   margin-top: 5vh;
 }
+
+/* --------------------- */
+/* ------ BOTÃO  ------- */
+/* --------------------- */
+
+.button {
+  padding: 20px 40px;
+  background-color: #d4967d;
+  border: none;
+  cursor: pointer;
+  font-family: "Pontano Sans", sans-serif;
+  transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 15px;
+
+}
+
+.button a {
+  color: white;
+  font-weight: 300;
+}
+
+.button:hover {
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+
+/* --------------------- */
+/* - CONTEUDO EM BLOCO - */
+/* --------------------- */
 
 .content-block {
   display: flex;
@@ -155,10 +190,7 @@ button:hover {
   font-size: 23px;
   text-align: left;
   line-height: 1.6;
-}
-
-.content-text button {
-  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 .content-image,
@@ -175,10 +207,19 @@ button:hover {
   flex-direction: row-reverse;
 }
 
+.content-map {
+  filter: grayscale(100%) contrast(100%) brightness(110%);
+}
+
+/* --------------------- */
+/* - SERVIÇOS / PREÇOS - */
+/* --------------------- */
+
 .services {
   gap: 50px;
   height: 100vh;
   padding: 0 210px;
+  margin-bottom: 50vh;
 }
 
 .services h2 {
@@ -221,23 +262,86 @@ button:hover {
   text-decoration: none;
 }
 
+/* --------------------- */
+/* CONTATO / FORMULARIO  */
+/* --------------------- */
+
 .contact-section {
   display: flex;
   align-items: center;
-  gap: 100px;
   height: 100vh;
   padding: 0 210px;
   text-align: center;
+  background-color: #495a58;
+  gap: 200px;
 }
 
 .contact-text {
   width: 40%;
-}
-.contact-form {
-  width: 100%;
+  color: white;
 }
 
-.abordagem {
+.contact-text h2 {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  font-size: 50px;
+  text-align: left;
+  margin-bottom: 7vh;
+}
+
+.contact-text p {
+  font-family: var(--font-secondary);
+  font-weight: 300;
+  font-size: 20px;
+  text-align: left;
+}
+
+form {
+  max-width: 500px;
+  text-align: left;
+}
+
+.form-linha {
+  display: flex;
+  gap: 16px;
+}
+
+.form-campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  text-align: left;
+  display: flex;
+  color: white;
+  font-family: var(--font-secondary);
+}
+
+input,
+textarea {
+  padding: 20px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  margin-bottom: 5vh;
+}
+
+.container-sobre .chamada-para-ação {
+  background-color: #dcd9d0;
+  color: black;
+}
+
+/* --------------------- */
+/*   */
+/* --------------------- */
+
+.approach-preview {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -248,88 +352,18 @@ button:hover {
   margin-bottom: 22px;
 }
 
-.abordagem h2 {
+.approach-preview h2 {
   font-family: "Cactus Classical Serif", serif;
   font-size: 80px;
   font-weight: 400;
   margin-bottom: 40px;
 }
 
-.abordagem p {
+.approach-preview p {
   font-family: "Pontano Sans", sans-serif;
   font-size: 23px;
   line-height: 1.5;
   margin-bottom: 130px;
-}
-
-.seção-foto-texto {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.foto-texto {
-  display: flex;
-  align-items: center;
-  margin-bottom: 100px;
-}
-
-.foto-texto img {
-  width: 600px;
-  border-radius: 10px;
-  margin-left: 50px;
-  display: flex;
-  margin-right: 10vw;
-}
-
-.texto-foto {
-  max-width: 600px;
-  margin-right: 50px;
-}
-
-.texto-foto h3 {
-  font-family: "Cactus Classical Serif", serif;
-  font-size: 60px;
-  margin-bottom: 60px;
-  font-weight: 400;
-}
-
-.texto-foto p {
-  font-family: "Pontano Sans", sans-serif;
-  font-size: 27px;
-  line-height: 1.5;
-}
-
-.mapa {
-  filter: grayscale(100%) contrast(100%) brightness(110%);
-}
-
-.seção-texto-mapa {
-  height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 10px;
-  margin-right: 30px;
-}
-
-.texto-mapa {
-  max-width: 600px;
-  margin-right: 10vw;
-  margin-left: 2vw;
-}
-
-.texto-mapa h3 {
-  font-family: "Cactus Classical Serif", serif;
-  font-size: 70px;
-  margin-bottom: 70px;
-  font-weight: 400;
-}
-
-.texto-mapa p {
-  font-family: "Pontano Sans", sans-serif;
-  font-size: 27px;
-  line-height: 1.5;
 }
 
 .serviços {
