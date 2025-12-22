@@ -10,7 +10,6 @@
   --font-secondary: "Pontano Sans", sans-serif;
 }
 
-
 header {
   width: 100%;
   height: 15vh;
@@ -138,7 +137,6 @@ button:hover {
   text-align: center;
 }
 
-
 .content-text {
   text-align: left;
 }
@@ -154,10 +152,9 @@ button:hover {
 .content-text p {
   font-family: var(--font-secondary);
   font-weight: 300;
-  font-size:23px;
+  font-size: 23px;
   text-align: left;
   line-height: 1.6;
-  
 }
 
 .content-text button {
@@ -175,7 +172,7 @@ button:hover {
 }
 
 .content-block.reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .services {
@@ -188,6 +185,9 @@ button:hover {
   margin-top: 40px;
   text-align: center;
   margin-bottom: 80px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 60px;
 }
 
 .list-iten,
@@ -199,13 +199,42 @@ button:hover {
   display: flex;
   align-items: top;
   gap: 50px;
-  padding: 0 80px;
+  padding: 0 90px;
+  margin-bottom: 17vh;
 }
 
-
 .list-iten h3 {
+  font-family: var(--font-primary);
   display: flex;
   justify-items: start;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.list-price p {
+  font-family: var(--font-secondary);
+  line-height: 1.5;
+}
+
+.list-price a {
+  color: #d4967d;
+  text-decoration: none;
+}
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  height: 100vh;
+  padding: 0 210px;
+  text-align: center;
+}
+
+.contact-text {
+  width: 40%;
+}
+.contact-form {
+  width: 100%;
 }
 
 .abordagem {
