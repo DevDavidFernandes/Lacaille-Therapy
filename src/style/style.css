@@ -60,7 +60,6 @@ header {
 }
 
 .cabeçalho .button {
-  
 }
 
 /* --------------------- */
@@ -99,7 +98,10 @@ header {
 .bg-sobre {
   background-image: url("../img/fundo-sobre.png");
 }
-
+.bg-service {
+  background-image: url(../img/fundo-service.jpg);
+  background-position: center;
+}
 /* --------------------- */
 /* TEXTO DE APRESENTAÇÃO  */
 /* --------------------- */
@@ -123,11 +125,18 @@ header {
   margin-bottom: 10vh;
 }
 
+.texto-home h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  width: 50vw;
+}
+
 .texto-home p {
   margin-bottom: 20px;
   line-height: 1.5;
   font-size: 30px;
   margin-top: 5vh;
+  width: 55vw;
 }
 
 /* --------------------- */
@@ -145,7 +154,6 @@ header {
   text-decoration: none;
   letter-spacing: 2px;
   font-size: 15px;
-
 }
 
 .button a {
@@ -158,7 +166,9 @@ header {
   opacity: 0.8;
 }
 
-
+.services-summary .button{
+  margin-top: 50px;
+}
 /* --------------------- */
 /* - CONTEUDO EM BLOCO - */
 /* --------------------- */
@@ -211,8 +221,8 @@ header {
   filter: grayscale(100%) contrast(100%) brightness(110%);
 }
 
-/* --------------------- */
-/* - SERVIÇOS / PREÇOS - */
+/* ---------------------- */
+/* - services / PREÇOS - */
 /* --------------------- */
 
 .services {
@@ -338,7 +348,7 @@ textarea {
 }
 
 /* --------------------- */
-/*   */
+/* TEXTO SOBRE ABORDAGEM */
 /* --------------------- */
 
 .approach-preview {
@@ -366,47 +376,90 @@ textarea {
   margin-bottom: 130px;
 }
 
-.serviços {
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #495a58;
-  color: white;
+/* --------------------- */
+/*  SERVIÇOS / RESUMO */
+/* --------------------- */
+
+.container-service .services-summary {
+  background-color: white;
 }
 
-.serviços h3 {
-  font-family: "Cactus Classical Serif", serif;
-  font-size: 60px;
-  margin-bottom: 40px;
-  font-weight: 400;
-}
-
-.serviços-lista {
+.services-summary {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 50px;
+  height: 100vh;
+  padding: 60px 0;
   text-align: center;
-  margin-bottom: 5vw;
-}
-
-.serviços-lista img {
-  width: 300px;
-  margin-bottom: 20px;
-}
-
-.terapia p {
-  font-family: "Pontano Sans", sans-serif;
-  font-size: 20px;
-  line-height: 1.5;
   align-items: center;
   justify-content: center;
-  display: block;
+  flex-direction: column;
+  background-color: #495a58;
 }
 
-.terapeuta {
+.services-summary h3 {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 0px;
+}
+
+.container-service .services-summary h3 {
+  color: black;
+  margin-top: 20px;
+}
+
+.services-summary h4 {
+  color: black;
+  font-family: var(--font-primary);
+  margin-bottom: 50px;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  padding: 90px 0 90px 0;
+}
+
+.container-service .services-grid {
+  padding: 0;
+}
+
+.service-card {
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease;
+  width: 350px;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.container-service .services-summary p {
+  color: black;
+}
+
+.service-card p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.1rem;
+  font-family: var(--font-secondary);
+
+}
+
+.container-home .service-card:hover {
+  transform: translateY(-10px);
+}
+
+/* --------------------- */
+/* - SOBRE A TERAPEUTA -*/
+/* --------------------- */
+
+.about-preview {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -415,7 +468,7 @@ textarea {
   margin-bottom: 100px;
 }
 
-.terapeuta h3 {
+.about-preview h3 {
   font-family: "Cactus Classical Serif", serif;
   font-size: 50px;
   margin-bottom: 40px;
@@ -423,7 +476,7 @@ textarea {
   font-weight: 400;
 }
 
-.foto-terapeuta {
+.about-image {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -431,11 +484,11 @@ textarea {
   text-align: center;
 }
 
-.foto-terapeuta img {
+.about-image img {
   width: 320px;
 }
 
-.foto-terapeuta p {
+.about-image p {
   font-family: "Pontano Sans", sans-serif;
   font-size: 23px;
   line-height: 1.5;
@@ -443,8 +496,12 @@ textarea {
   margin-bottom: 50px;
 }
 
-.comentario {
-  height: 95vh;
+/* --------------------- */
+/* ------ COMENTARIO ------*/
+/* --------------------- */
+
+.testimonials {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -454,21 +511,25 @@ textarea {
   background-color: #dcd9d0;
 }
 
-.comentario h4 {
+.testimonials h4 {
   font-family: "Cactus Classical Serif", serif;
   font-size: 50px;
   margin-bottom: 80px;
   font-weight: 400;
 }
 
-.comentario p {
+.testimonials p {
   font-family: "Pontano Sans", sans-serif;
   font-size: 20px;
   line-height: 1.5;
   font-weight: 300;
 }
 
-.chamada-para-ação {
+/* --------------------- */
+/* -- CHAMADO PARA AÇÃO --*/
+/* --------------------- */
+
+.cta-footer {
   height: 55vh;
   display: flex;
   flex-direction: column;
@@ -479,17 +540,21 @@ textarea {
   color: white;
 }
 
-.chamada-para-ação h2 {
+.container-sobre .cta-footer {
+  background-color: #dcd9d0;
+  color: black;
+}
+
+.cta-footer h2 {
   font-family: "Cactus Classical Serif", serif;
   font-size: 50px;
   margin-bottom: 40px;
   font-weight: 400;
 }
 
-.chamada-para-ação button {
-  font-size: 20px;
-  padding: 15px 60px;
-}
+/* --------------------- */
+/* -- RODAPE / FOOTER -- */
+/* --------------------- */
 
 .rodape {
   height: 45vh;
