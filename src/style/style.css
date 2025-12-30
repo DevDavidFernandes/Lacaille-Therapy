@@ -26,10 +26,15 @@ header {
   position: absolute;
 }
 
+.contact-header {
+  position: relative;
+}
+
 .cabeçalho {
   display: flex;
   align-items: center;
 }
+
 
 .cabeçalho h2 a {
   text-decoration: none;
@@ -39,6 +44,10 @@ header {
   font-family: "Cactus Classical Serif", serif;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cabeçalho-contact h2 a {
+  color: black;
 }
 
 .cabeçalho ul {
@@ -57,6 +66,10 @@ header {
   color: white;
   font-family: pontano sans, sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cabeçalho-contact ul li a {
+  color: black ;
 }
 
 .cabeçalho .button {
@@ -101,6 +114,10 @@ header {
 .bg-service {
   background-image: url(../img/fundo-service.jpg);
   background-position: center;
+}
+
+.bg-psi {
+  background-image: url(../img/fundo-psi.jpg);
 }
 /* --------------------- */
 /* TEXTO DE APRESENTAÇÃO  */
@@ -166,7 +183,7 @@ header {
   opacity: 0.8;
 }
 
-.services-summary .button{
+.services-summary .button {
   margin-top: 50px;
 }
 /* --------------------- */
@@ -291,6 +308,10 @@ header {
   color: white;
 }
 
+.container-contato .contact-text {
+  color: black;
+}
+
 .contact-text h2 {
   font-family: var(--font-primary);
   font-weight: 300;
@@ -331,6 +352,10 @@ label {
   font-family: var(--font-secondary);
 }
 
+.container-contato label {
+  color: black;
+}
+
 input,
 textarea {
   padding: 20px;
@@ -345,6 +370,10 @@ textarea {
 .container-sobre .chamada-para-ação {
   background-color: #dcd9d0;
   color: black;
+}
+
+.container-contato .contact-section {
+  background-color: white;
 }
 
 /* --------------------- */
@@ -448,7 +477,6 @@ textarea {
   font-weight: 300;
   font-size: 1.1rem;
   font-family: var(--font-secondary);
-
 }
 
 .container-home .service-card:hover {
@@ -505,9 +533,8 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: center;
-  padding: 0 10vw;
+  align-items: center;
   background-color: #dcd9d0;
 }
 
@@ -550,6 +577,48 @@ textarea {
   font-size: 50px;
   margin-bottom: 40px;
   font-weight: 400;
+}
+
+/* --------------------- */
+/* -- RODAPE / FOOTER -- */
+/* --------------------- */
+
+.container-service .testimonials {
+  flex-direction: row;
+  max-height: 100vh;
+}
+
+.testimonials-image {
+  position: absolute;
+  margin-right: 400px;
+}
+
+.testimonials-image img {
+  width: 900px;
+}
+
+.testimonials-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  z-index: 0;
+  width: 700px;
+  height: 400px;
+  margin-left: 450px;
+}
+
+.testimonials-text h4 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  align-items: center;
+  padding: 0 20px 0 20px;
+}
+
+.testimonials-text p {
+  text-align: left;
+  padding-left: 20px;
 }
 
 /* --------------------- */
