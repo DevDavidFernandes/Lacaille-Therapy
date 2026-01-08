@@ -32,3 +32,4 @@ Neste projeto, apliquei conceitos avançados de desenvolvimento front-end:
 1. Clone o repositório:
    ```bash
    git clone [https://github.com/SEU_USUARIO/lacaille-therapy.git](https://github.com/SEU_USUARIO/lacaille-therapy.git)
+2. Abra o arquivo index.html no seu navegador.
