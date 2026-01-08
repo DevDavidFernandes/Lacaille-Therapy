@@ -1,6 +1,6 @@
 # Lacaille Therapy 🌿
 
-**Lacaille Therapy** é o site profissional da Dra. Luiza Lacaille, psicóloga especializada em Terapia Cognitivo-Comportamental (TCC) e Neuropsicologia. O projeto foi desenvolvido com foco em minimalismo, acessibilidade e autoridade técnica.
+**Lacaille Therapy** é o site profissional da futura Dra. Luiza Lacaille, psicóloga especializada em Terapia Cognitivo-Comportamental (TCC) e Neuropsicologia. O projeto foi desenvolvido com foco em minimalismo, acessibilidade e autoridade técnica.
 
 ## Sobre o Projeto
 
@@ -10,7 +10,6 @@ O objetivo deste site foi transformar um modelo genérico de clínica em uma pla
 - **Home:** Visão geral da abordagem e serviços.
 - **Sobre:** Trajetória profissional e filosofia de atendimento.
 - **Serviços:** Detalhamento técnico de TCC, Neuropsicologia e Desenvolvimento de Habilidades.
-- **Contato:** Integração com WhatsApp e sistema de informações sobre reembolso de planos de saúde.
 
 ## Tecnologias Utilizadas
 
