@@ -212,6 +212,7 @@ header {
 .services-summary .button {
   margin-top: 50px;
 }
+
 /* --------------------- */
 /* - CONTEUDO EM BLOCO - */
 /* --------------------- */
@@ -726,6 +727,10 @@ input:hover {
   color: #d4967d;
   font-size: 20px;
 }
+
+/* --------------------- */
+/* - AGENDA / COMECE  - */
+/* --------------------- */
 
 .agendar {
   width: 700px;
