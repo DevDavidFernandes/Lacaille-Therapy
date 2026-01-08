@@ -58,6 +58,13 @@ header {
   list-style: none;
   margin: 0 15px;
 }
+.cabeçalho ul li a.active {
+  border-bottom: 1px solid white;
+}
+
+.contact-header .cabeçalho ul li a.active {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
 
 .cabeçalho ul li a {
   text-decoration: none;
@@ -67,9 +74,6 @@ header {
 
 .cabeçalho-contact ul li a {
   color: black;
-}
-
-.cabeçalho .button {
 }
 
 /* --------------------- */
