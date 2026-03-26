@@ -814,13 +814,14 @@ header {
   text-align: center;
   background-color: var(--cor-fundo-verde);
   color: white;
+
 }
 
 .container-sobre .cta-footer {
   background-color: var(--cor-fundo-bege);
   color: black;
-}
 
+}
 .cta-footer h2 {
   font-family: var(--font-primary);
   font-size: clamp(2rem, 4vw, 3rem);
@@ -829,6 +830,7 @@ header {
   max-width: 800px;
   width: 100%;
   text-wrap: balance; /* ← distribui as quebras de forma equilibrada */
+
 }
 
 .cta-footer h2 {
